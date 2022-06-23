@@ -1,7 +1,9 @@
 import time
 epoch_time = time.time()
 current_time = time.ctime(epoch_time)
+print("Current time is: " + str(current_time))
 task_name = input("Please enter task name \n <note> timer will start when you enter the task name: ")
+
 
 #Setting a start time
 start_time = time.time()
@@ -20,6 +22,8 @@ while value.lower() != "q":
 
     # printing the lap number, lap time and total time
     print("Total Time: " + str(total_time))
+    stopped_time = time.ctime(epoch_time)
+    print("You finished your task at: " + str(stopped_time))
 
     print("*" * 20)
 
