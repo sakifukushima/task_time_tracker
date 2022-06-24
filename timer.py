@@ -27,6 +27,4 @@ while value.lower() != "q":
 
     print("*" * 20)
 
-    last_time = time.time()
-
 print("complete")
